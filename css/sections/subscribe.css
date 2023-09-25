@@ -1,0 +1,250 @@
+.subscription {
+    padding: 64px;
+
+    background-color: var(--primary-color);
+    background-image: url('../../assets/assets/subscribe_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.subscription h2 {
+    font-size:  88px;
+    font-family: var(--playfair-display);
+    font-weight: 600;
+    line-height: 123px;
+
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+  
+}
+
+/* .subscription p {
+    font-size:  18px;
+    font-family: var(--playfair-display);
+    font-weight: 300;
+    line-height: 36px;
+
+    margin-top: 32px;
+
+    color: rgba(255, 255, 255, 0.8)
+} */
+
+.subscription__form {
+    /* min-width: 480px; */
+    margin-top: 40px;
+
+    padding: 14px 14px 14px 24px;
+
+    display: flex;
+    gap: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 46px;
+
+    flex-direction: column;
+
+    /* align-items: center; */
+}
+
+.subscription__form message-icon {
+  position: absolute;
+}
+
+.subscription__form input {
+    flex: 1;
+
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: var(--plus-jakarta-sans);
+
+    color: #fff;
+    opacity: 0.5;
+
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.subscription__form input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.subscription example{
+  width: 100%;
+  display: flex;
+  padding: 30px 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription center{
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.subscription__form button{
+    padding: 35px;
+    font-size: 25px;
+    font-weight: 600;
+    /* font-family: var(--plus-jakarta-sans); */
+    color: #fff;
+    text-align: center;
+    /* background: #f5f5f5; */
+    background: var(--black-400);
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: Poppins, sans-serif;
+  }
+
+.popup{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  top: -150%; 
+  opacity: 0; 
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 360px;
+  padding: 20px 30px;
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 20ms ease-in-out 0ms; 
+}
+
+.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.subscription form{
+    background: #fff;
+    width: 340px;
+    height: fit-content;
+    padding: 30px 30px;
+    font-size: 18px;
+    border-radius: 40px;
+  
+    object-fit: contain;
+  
+    /* display: flex; */
+    align-items: center;
+    
+  }
+
+  .message-icon {
+    list-style: none;
+  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .message-icon li {
+    flex: 1;
+    display: flex;
+   
+    align-items: center;   
+    flex-direction: row;
+    gap: 10px;
+  
+  }
+  
+  .message-icon img {
+    width: 40px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .message-icon p {
+    font-size: 22px ;
+    font-weight: bold;
+    margin-left: 2px;
+    gap: 10px;
+    color: var(--black-400); 
+  }
+  
+  .close-btn{
+    /* position: absolute; */
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 20px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  form input, textarea {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    border-bottom: 1px solid #000;
+    outline: none;
+  }
+  
+  #input-field {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #input-field i {
+    font-size: 22px;
+    margin-right: 15px;
+  }
+  
+  .send-btn {
+    width: 100px;
+    border: none;
+    background: var(--black-400);
+    color: #fff;
+    font-size: 16px; 
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 500;
+    padding: 6px 0;
+    border-radius: 50px;
+  
+    align-items: center;
+    cursor: pointer;
+  
+  }  
+  .submitclose-btn{
+    object-fit: contain;
+    align-items: center;
+    padding: 5px 30px;
+  }
+  
+  .reset-btn {
+    width: 100px;
+    border: none;
+    background: var(--black-400);
+    color: #fff;
+    font-size: 16px; 
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 500;
+    padding: 6px 0;
+    border-radius: 50px;
+  
+    align-items: center;
+    
+  
+    cursor: pointer;
+  }
+  
+  
